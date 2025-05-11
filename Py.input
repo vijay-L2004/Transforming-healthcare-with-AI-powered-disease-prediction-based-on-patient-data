@@ -1,0 +1,48 @@
+
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report
+
+# Sample dataset - You can replace this with actual patient data
+data = {
+    'age': [25, 45, 52, 23, 40, 60, 35, 50],
+    'blood_pressure': [120, 140, 130, 110, 145, 150, 135, 138],
+    'cholesterol': [200, 230, 250, 180, 240, 260, 210, 220],
+    'diabetic': [0, 1, 1, 0, 1, 1, 0, 1],
+    'has_disease': [0, 1, 1, 0, 1, 1, 0, 1]  # Target variable
+}
+
+# Convert to DataFrame
+df = pd.DataFrame(data)
+
+# Features and target
+X = df.drop('has_disease', axis=1)
+y = df['has_disease']
+
+# Split the data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Initialize and train model
+model = LogisticRegression()
+model.fit(X_train, y_train)
+
+# Make predictions
+predictions = model.predict(X_test)
+
+# Evaluate the model
+print("Accuracy:", accuracy_score(y_test, predictions))
+print("Classification Report:\n", classification_report(y_test, predictions))
+
+# Predict for a new patient
+new_patient = pd.DataFrame({
+    'age': [55],
+    'blood_pressure': [142],
+    'cholesterol': [245],
+    'diabetic': [1]
+})
+new_prediction = model.predict(new_patient)
+print("Predicted disease status (1 = Has disease, 0 = No disease):", new_prediction[0])
+
+

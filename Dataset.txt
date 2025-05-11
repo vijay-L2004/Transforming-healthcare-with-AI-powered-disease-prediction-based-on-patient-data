@@ -1,0 +1,77 @@
+
+
+1. MIMIC-IV
+
+- Description: ICU patient records (lab results, vitals, diagnoses, meds)
+- Size: ~300,000 patients
+- Link: https://physionet.org/content/mimiciv
+- Note: Requires credentialed access (CITI certification)
+
+
+2. PIMA Indian Diabetes Dataset
+
+- Description: Health data for predicting diabetes onset
+- Features: Age, glucose, insulin, BMI, pregnancies, etc.
+- Link: https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
+
+
+3. Heart Disease UCI Dataset
+
+- Description: Predicts presence of heart disease
+- Features: Age, sex, chest pain type, ECG results, etc.
+- Link: https://archive.ics.uci.edu/ml/datasets/heart+disease
+
+
+4. Breast Cancer Wisconsin Dataset
+
+- Description: Classifies benign vs malignant tumors
+- Features: Cell nucleus measurements
+- Link: https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)
+
+
+5. Chronic Kidney Disease Dataset
+
+- Description: Predicts presence of CKD
+- Features: Blood pressure, specific gravity, albumin, hemoglobin, etc.
+- Link: https://www.kaggle.com/datasets/mansoordaku/ckdisease
+
+
+6. Liver Patient Dataset
+
+Description: Detects liver disease based on lab tests and demographics
+
+Features: Age, gender, bilirubin, enzymes
+
+Link: https://www.kaggle.com/datasets/arbazkhan971/liver-patient-dataset
+
+
+7. Stroke Prediction Dataset
+
+Description: Predicts stroke risk using health indicators
+
+Features: Age, BMI, hypertension, heart disease, etc.
+
+Link: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
+
+
+8. COVID-19 Chest X-ray Dataset
+
+Description: Classifies COVID-19 pneumonia from X-ray images
+
+Link: https://www.kaggle.com/datasets/praveengovi/coronahack-chest-xraydataset
+
+
+9. Alzheimer’s Disease Neuroimaging Initiative (ADNI)
+
+Description: Clinical, imaging, and genetic data for early Alzheimer’s detection
+
+Link: https://adni.loni.usc.edu/
+
+Note: Registration required
+
+
+10. NHANES (National Health and Nutrition Examination Survey)
+
+Description: U.S. public health dataset with disease risk, labs, demographics
+
+Link: https://www.cdc.gov/nchs/nhane
